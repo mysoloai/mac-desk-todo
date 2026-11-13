@@ -1,0 +1,44 @@
+# 独立开发工作区
+.worktrees/
+
+# 构建产物与缓存
+dist/
+build/
+target/
+node_modules/
+__pycache__/
+.cache/
+.pytest_cache/
+
+# 本地配置与密钥
+.env
+.env.local
+*.pem
+*.key
+secrets/
+
+# 工具索引与日志（按实际使用的代码索引工具调整目录名）
+.codegraph/
+*.log
+.tmp/
+
+# Python
+venv
+*.py[cod]
+
+# 数据（用户真实数据，勿提交）
+data/**
+!data/.gitkeep
+
+# 系统
+.DS_Store
+.tra*
+
+# 开源副本额外忽略
+docs/.DS_Store
+*.xcuserstate
+
+# 快照带出的测试数据库
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
